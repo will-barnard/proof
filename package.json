@@ -1,0 +1,30 @@
+{
+  "name": "proof",
+  "version": "0.1.0",
+  "description": "Local test bench for site-press output: drop in a site tarball, get the site, its admin and a set of checks.",
+  "private": true,
+  "type": "module",
+  "bin": {
+    "proof": "bin/proof.js"
+  },
+  "scripts": {
+    "start": "node bin/proof.js",
+    "build": "vite build ui",
+    "dev:ui": "vite ui"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "embedded-postgres": "16.14.0-beta.17",
+    "express": "4.21.2",
+    "pg": "8.13.1"
+  },
+  "devDependencies": {
+    "@fontsource-variable/archivo": "5.2.5",
+    "@fontsource/ibm-plex-mono": "5.2.5",
+    "@vitejs/plugin-vue": "5.2.1",
+    "vite": "6.3.5",
+    "vue": "3.5.13"
+  }
+}
